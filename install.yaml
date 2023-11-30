@@ -22019,6 +22019,8 @@ spec:
       labels:
         app.kubernetes.io/name: argocd-application-controller
     spec:
+      nodeSelector:
+        kubernetes.io/os: linux
       affinity:
         podAntiAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:
